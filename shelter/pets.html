@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body class="pets">
+    <header class="header-container">
+        <a href="main.html" class="logo-block">
+            <p class="logo">Cozy House</p>
+            <p class="logo-text">Shelter for pets in Boston</p>
+        </a>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="main.html" class="nav-link">About the shelter</a></li>
+                <li><a class="nav-link active">Our pets</a></li>
+                <li><a href="main.html/#help" class="nav-link">Help the shelter</a></li>
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="friends-section">
+            <h1 class="visually-hidden"><p class="logo">Cozy House</p>
+                <p class="logo-text">Shelter for pets in Boston</p></h1>
+            <div class="content-wrapper">
+                <h2 class="section-title">Our friends who <br> are looking for a house</h2>
+                <div class="friends-gallery flex-container">
+                    <article class="friend-card">
+                        <img loading="lazy" src="./assets/img/pets-katrine.jpg" class="friend-image"
+                            alt="Katrine, a friend looking for a house">
+                        <h3 class="friend-name">Katrine</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                    <article class="friend-card">
+                        <img loading="lazy" src="./assets/img/pets-jennifer.jpg" class="friend-image"
+                            alt="Jennifer, a friend looking for a house">
+                        <h3 class="friend-name">Jennifer</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                    <article class="friend-card">
+                        <img loading="lazy" src="./assets/img/pets-woody.jpg" class="friend-image"
+                            alt="Woody, a friend looking for a house">
+                        <h3 class="friend-name">Woody</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                    <article class="friend-card">
+                        <img loading="lazy"
+                            src="./assets/img/pets-katrine.png"
+                            class="friend-image" alt="Sophia, a friend looking for a house">
+                        <h3 class="friend-name">Sophia</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                    <article class="friend-card">
+                        <img loading="lazy" src="./assets/img/pets-timmy.png" class="friend-image"
+                            alt="Timmy, a friend looking for a house">
+                        <h3 class="friend-name">Timmy</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                    <article class="friend-card">
+                        <img loading="lazy" src="/assets/img/pets-charly.png" class="friend-image"
+                            alt="Charly, a friend looking for a house">
+                        <h3 class="friend-name">Charly</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                    <article class="friend-card">
+                        <img loading="lazy" src="/assets/img/pets-scarlet.png" class="friend-image"
+                            alt="Scarlett, a friend looking for a house">
+                        <h3 class="friend-name">Scarlett</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                    <article class="friend-card">
+                        <img loading="lazy" src="/assets/img/pets-freddie.png" class="friend-image"
+                            alt="Freddie, a friend looking for a house">
+                        <h3 class="friend-name">Freddie</h3>
+                        <a href="#" class="btn-secondary">Learn more</a>
+                    </article>
+                </div>
+                <ul class="pagination">
+                    <li><button id="first" class="disabled">&#60;&#60;</button></li>
+                    <li><button id="prev" class="disabled">&#60;</button></li>
+                    <li><button id="page" class="active">1</button></li>
+                    <li><button id="next">&#62;</button></li>
+                    <li><button id="last">&#62;&#62;</button></li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section class="contact-section" id="contacts">
+          <div class="content-wrapper flex-container">
+            <div class="contact-info">
+              <h3 class="contact-heading">For questions <br> and suggestions</h3>
+              <a href="mailto:email@shelter.com" class="contact-item" target="_blank">
+                <img
+                  src="./assets/img/contact-mail.svg"
+                  alt="Email icon" class="contact-icon">
+                <p class="contact-text">email@shelter.com</p>
+            </a>
+              <a class="contact-item" href="phone:+136745677554" target="_blank">
+                <img
+                  src="./assets/img/contact-phone.svg"
+                  alt="Phone icon" class="contact-icon">
+                <p class="contact-text" >+13 674 567 75 54</p>
+              </a>
+            </div>
+            <div class="location contact-info">
+              <h3 class="contact-heading">We are waiting <br> for your visit</h3>
+              <a href="https://maps.app.goo.gl/s82cY4Sr86qVyfK88" class="contact-item" target="_blank">
+                <img
+                  src="./assets/img/contact-pin.svg"
+                  alt="Location icon" class="location-icon">
+                <span class="contact-text">1 Central Street, Boston <br> (entrance
+                  from the store)</span>
+              </a>
+              <a href="https://maps.app.goo.gl/rRj5m6ZWTQ6mv3xw58" target="_blank" class="contact-item">
+                <img
+                  src="./assets/img/contact-pin.svg"
+                  alt="Location icon" class="location-icon">
+                <span class="contact-text">18 South Park, London</span>
+              </a>
+            </div>
+            <div class="image-block">
+              <img
+                src="./assets/img/footer-puppy.png"
+                alt="Cute puppy" class="footer-image">
+            </div>
+          </div>
+        </section>
+      </footer>
+    <!-- <script>
+        const items = Array.from({length: 100}, (_, i) => `Item ${i + 1}`);
+        const itemsPerPage = 10;
+        let currentPage = 1;
+        const totalPages = Math.ceil(items.length / itemsPerPage);
+
+        function renderPage(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = items.slice(start, end);
+            document.getElementById('content').innerHTML = pageItems.join('<br>');
+            document.getElementById('page').innerText = page;
+
+            // Update button states
+            document.getElementById('first').disabled = page === 1;
+            document.getElementById('prev').disabled = page === 1;
+            document.getElementById('next').disabled = page === totalPages;
+            document.getElementById('last').disabled = page === totalPages;
+        }
+
+        document.getElementById('first').addEventListener('click', () => {
+            currentPage = 1;
+            renderPage(currentPage);
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+            }
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage(currentPage);
+            }
+        });
+
+        document.getElementById('last').addEventListener('click', () => {
+            currentPage = totalPages;
+            renderPage(currentPage);
+        });
+
+        renderPage(currentPage);
+    </script> -->
+</body>
+
+</html>

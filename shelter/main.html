@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+
+  <body>
+    <section class="hero-section">
+      <header class="header-container">
+        <a href="#" class="logo-block">
+          <p class="logo">Cozy House</p>
+          <p class="logo-text">Shelter for pets in Boston</p>
+        </a>
+        <nav>
+          <ul class="main-nav">
+            <li><a class="nav-link active">About the
+                shelter</a></li>
+            <li><a href="#pets" class="nav-link">Our pets</a></li>
+            <li><a href="#help" class="nav-link">Help the shelter</a></li>
+            <li><a href="#contacts" class="nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content-wrapper flex-container hero-content">
+        <div class="left-column text-content">
+          <h1 class="hero-title">Not only people <br> need a house</h1>
+          <p class="hero-description">We offer to give a chance to a little and
+            nice puppy with an extremely wide and
+            open heart. He or she will love you more than anybody else in the
+            world, you will see!</p>
+          <a href="#pets" class="btn-primary">Make a friend</a>
+        </div>
+        <div class="right-column">
+          <img src="./assets/img/hero-img.png"
+            alt="A cute puppy looking for a home" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <main>
+
+      <section class="about-shelter" id="about">
+        <div class="content-wrapper flex-container">
+          <div class="left-column">
+            <img loading="lazy" src="./assets/img/about-img.png"
+              class="shelter-image" alt="Cozy House Shelter">
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h2 class="section-title">About the shelter <br> "Cozy House"</h2>
+              <p class="description">
+                Currently we have 121 dogs and 342 cats on our hands and
+                statistics show that only 20% of them will find a
+                family. The others will continue to live with us and will be
+                waiting for a lucky chance to become dearly
+                loved.
+              </p>
+              <p class="additional-info">
+                We feed our wards with the best food and make sure that they do
+                not get sick, feel comfortable (including
+                psychologically) and well. We are supported by 87 volunteers and
+                28 employees of various skill levels.
+                About 12% of the animals are taken by the shelter staff. Taking
+                care of the animals, they become attached
+                to the pets and would hardly ever leave them alone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="friends-section" id="pets">
+        <div class="content-wrapper">
+          <h2 class="section-title">Our friends who <br> are looking for a
+            house</h2>
+          <div class="friends-gallery">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <article class="friend-card">
+                    <img loading="lazy" src="./assets/img/pets-katrine.jpg"
+                      class="friend-image"
+                      alt="Katrine, a friend looking for a house">
+                    <h3 class="friend-name">Katrine</h3>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="friend-card">
+                    <img loading="lazy" src="./assets/img/pets-jennifer.jpg"
+                      class="friend-image"
+                      alt="Jennifer, a friend looking for a house">
+                    <h3 class="friend-name">Jennifer</h3>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="friend-card">
+                    <img loading="lazy" src="./assets/img/pets-woody.jpg"
+                      class="friend-image"
+                      alt="Woody, a friend looking for a house">
+                    <h3 class="friend-name">Woody</h3>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="friend-card">
+                    <img loading="lazy"
+                      src="./assets/img/pets-katrine.jpg"
+                      class="friend-image"
+                      alt="Sophia, a friend looking for a house">
+                    <h3 class="friend-name">Sophia</h3>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="friend-card">
+                    <img loading="lazy" src="./assets/img/pets-timmy.png"
+                      class="friend-image"
+                      alt="Timmy, a friend looking for a house">
+                    <h3 class="friend-name">Timmy</h3>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="friend-card">
+                    <img loading="lazy" src="./assets/img/pets-charly.png"
+                      class="friend-image"
+                      alt="Charly, a friend looking for a house">
+                    <h3 class="friend-name">Charly</h3>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                  </article>
+                </div>
+              </div>
+              <!-- If we need navigation a href="#"s -->
+              <div class="swiper-button-prev arrow-button"></div>
+              <div class="swiper-button-next arrow-button"></div>
+            </div>
+          </div>
+          <a href="pets.html" class="btn-primary">Get to know the rest</a>
+        </div>
+      </section>
+
+      <section class="help-shelter" id="help">
+        <div class="content-wrapper">
+          <h2 class="section-title">How you can help <br> our shelter</h2>
+          <div class="help-items-container flex-container">
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-1.svg"
+                class="help-item-icon" alt="Pet food icon">
+              <p class="help-item-text">Pet food</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-2.svg"
+                class="help-item-icon" alt="Transportation icon">
+              <p class="help-item-text">Transportation</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-3.svg"
+                class="help-item-icon" alt="Toys">
+              <p class="help-item-text">Toys</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-4.svg"
+                class="help-item-icon" alt="Bowls and cups icon">
+              <p class="help-item-text">Bowls and cups</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-5.svg"
+                class="help-item-icon" alt="Shampoos icon">
+              <p class="help-item-text">Shampoos</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-6.svg"
+                class="help-item-icon" alt="Vitamins icon">
+              <p class="help-item-text"> Vitamins</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-7.svg"
+                class="help-item-icon" alt="Medicines icon">
+              <p class="help-item-text">Medicines</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-8.svg"
+                class="help-item-icon" alt="Collars and leashes icon">
+              <p class="help-item-text">Collars / leashes</p>
+            </div>
+            <div class="help-item">
+              <img loading="lazy"
+                src="./assets/img/help-9.svg"
+                class="help-item-icon" alt="Sleeping areas icon">
+              <p class="help-item-text">Sleeping areas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="donation-section">
+        <div class="content-wrapper flex-container">
+          <div class="left-column">
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/18567b04d91c954867ef5812d21bbbf71ee33dd0bbe3288f1aea159d91ed8f4e?apiKey=5afcb78520054b3887258e513ec6a964&"
+              class="donation-image" alt="Donation campaign visual">
+          </div>
+          <div class="right-column">
+            <div class="donation-info">
+              <h2 class="section-title">You can also <br> make a donation</h2>
+              <h3 class="bank-info">Name of the bank / Type of bank account</h3>
+              <div class="account-details">
+                <div class="account-number-wrapper">
+                  <img loading="lazy"
+                    src="./assets/img/credit-card.svg"
+                    class="credit-card-icon" alt="credit-card-icon">
+                  <a href="#" class="account-number">8380 2880 8028 8791 7435</a>
+                </div>
+              </div>
+              <p class="legal-info">Legal information and lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.
+                Maecenas a ipsum at libero sagittis dignissim sed ac diam.
+                Praesent ultrices maximus tortor et
+                vulputate.
+                Interdum et malesuada fames ac ante ipsum primis in
+                faucibus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <section class="contact-section" id="contacts">
+        <div class="content-wrapper flex-container">
+          <div class="contact-info">
+            <h3 class="contact-heading">For questions <br> and suggestions</h3>
+            <a href="mailto:email@shelter.com" class="contact-item" target="_blank">
+              <img
+                src="./assets/img/contact-mail.svg"
+                alt="Email icon" class="contact-icon">
+              <p class="contact-text">email@shelter.com</p>
+          </a>
+            <a class="contact-item" href="phone:+136745677554" target="_blank">
+              <img
+                src="./assets/img/contact-phone.svg"
+                alt="Phone icon" class="contact-icon">
+              <p class="contact-text" >+13 674 567 75 54</p>
+            </a>
+          </div>
+          <div class="location contact-info">
+            <h3 class="contact-heading">We are waiting <br> for your visit</h3>
+            <a href="https://maps.app.goo.gl/s82cY4Sr86qVyfK88" class="contact-item" target="_blank">
+              <img
+                src="./assets/img/contact-pin.svg"
+                alt="Location icon" class="location-icon">
+              <span class="contact-text">1 Central Street, Boston <br> (entrance
+                from the store)</span>
+            </a>
+            <a href="https://maps.app.goo.gl/rRj5m6ZWTQ6mv3xw58" target="_blank" class="contact-item">
+              <img
+                src="./assets/img/contact-pin.svg"
+                alt="Location icon" class="location-icon">
+              <span class="contact-text">18 South Park, London</span>
+            </a>
+          </div>
+          <div class="image-block">
+            <img
+              src="./assets/img/footer-puppy.png"
+              alt="Cute puppy" class="footer-image">
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    });
+  </script>
+    <script src="/assets/script.js"></script>
+  </body>
+
+</html>
