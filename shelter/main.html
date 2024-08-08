@@ -34,6 +34,13 @@
             <li><a href="#contacts" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
+        <div class="burger">
+          <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="21" x2="30" y2="21" stroke="#F1CDB3" stroke-width="2"/>
+            <line y1="11" x2="30" y2="11" stroke="#F1CDB3" stroke-width="2"/>
+            <line y1="1" x2="30" y2="1" stroke="#F1CDB3" stroke-width="2"/>
+            </svg>
+        </div>
       </header>
       <div class="content-wrapper flex-container hero-content">
         <div class="left-column text-content">
@@ -87,11 +94,39 @@
         <div class="content-wrapper">
           <h2 class="section-title">Our friends who <br> are looking for a
             house</h2>
-          <div class="friends-gallery">
+
             <div class="swiper">
-              <!-- Additional required wrapper -->
+              <div class="friends-gallery">
+                <article class="friend-card">
+                  <img loading="lazy" src="./assets/img/pets-katrine.jpg"
+                    class="friend-image"
+                    alt="Katrine, a friend looking for a house">
+                  <h3 class="friend-name">Katrine</h3>
+                  <a href="#" class="btn-secondary">Learn more</a>
+                </article>
+                <article class="friend-card">
+                  <img loading="lazy" src="./assets/img/pets-jennifer.jpg"
+                    class="friend-image"
+                    alt="Jennifer, a friend looking for a house">
+                  <h3 class="friend-name">Jennifer</h3>
+                  <a href="#" class="btn-secondary">Learn more</a>
+                </article>
+                <article class="friend-card">
+                  <img loading="lazy" src="./assets/img/pets-woody.jpg"
+                    class="friend-image"
+                    alt="Woody, a friend looking for a house">
+                  <h3 class="friend-name">Woody</h3>
+                  <a href="#" class="btn-secondary">Learn more</a>
+                </article>
+          
+            <div class="swiper-wrapper">
+</div>
+            </div>
+            <div class="swiper-button-prev arrow-button"></div>
+            <div class="swiper-button-next arrow-button"></div>
+          </div>
+            <!-- <div class="swiper">
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
                   <article class="friend-card">
                     <img loading="lazy" src="./assets/img/pets-katrine.jpg"
@@ -148,11 +183,9 @@
                   </article>
                 </div>
               </div>
-              <!-- If we need navigation a href="#"s -->
               <div class="swiper-button-prev arrow-button"></div>
               <div class="swiper-button-next arrow-button"></div>
-            </div>
-          </div>
+            </div> -->
           <a href="pets.html" class="btn-primary">Get to know the rest</a>
         </div>
       </section>
@@ -256,7 +289,7 @@
       <section class="contact-section" id="contacts">
         <div class="content-wrapper flex-container">
           <div class="contact-info">
-            <h3 class="contact-heading">For questions <br> and suggestions</h3>
+            <h3 class="contact-heading">For questions and suggestions</h3>
             <a href="mailto:email@shelter.com" class="contact-item" target="_blank">
               <img
                 src="./assets/img/contact-mail.svg"
@@ -271,7 +304,7 @@
             </a>
           </div>
           <div class="location contact-info">
-            <h3 class="contact-heading">We are waiting <br> for your visit</h3>
+            <h3 class="contact-heading">We are waiting for your visit</h3>
             <a href="https://maps.app.goo.gl/s82cY4Sr86qVyfK88" class="contact-item" target="_blank">
               <img
                 src="./assets/img/contact-pin.svg"
