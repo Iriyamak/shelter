@@ -37,7 +37,7 @@ html {
 
 body {
     margin: 0;
-
+    min-width: 300px;
 }
 
 p {
@@ -55,7 +55,9 @@ a {
     color: var(--color-dark-3xl);
     transition: all 0.3s;
 }
-
+img{
+    width: 100%;
+}
 nav a:hover {
     color: var(--color-light-s);
 }
@@ -143,7 +145,6 @@ img {
 
 /* Hero section */
 .hero-section {
-    overflow: hidden;
     width: 100%;
     background-image: url('./img/bg-hero.jpg');
     background-size: cover;
@@ -241,7 +242,7 @@ nav {
 
 
 .hero-image {
-    width: 698px;
+    max-width: 698px;
 }
 
 
@@ -257,7 +258,7 @@ nav {
 }
 
 .shelter-image {
-    width: 300px;
+    max-width: 300px;
 }
 
 .about-shelter .text-content {
@@ -612,7 +613,11 @@ nav {
     .friends-section {
         padding: 82px 0 100px;
     }
-
+    .friends-gallery{
+        margin: 58px 0 60px;
+        gap: 30px 40px;
+        flex-wrap: wrap;
+    }
 
     .btn-secondary {
         padding: 13px 44px;
@@ -660,6 +665,9 @@ nav {
         color: var(--color-dark-s);
         border: 2px solid var(--color-dark-s);
     }
+    .contact-section{
+        padding: 39px 0 0;;
+    }
 }
 
 
@@ -690,7 +698,7 @@ nav {
     }
 
     .hero-image {
-        width: 569px;
+        max-width: 569px;
         margin-top: 100px;
         margin-left: 138px;
     }
@@ -748,7 +756,25 @@ nav {
         -ms-scroll-snap-type: x mandatory;
         scroll-snap-type: x mandatory;
     }
-
+    .pets {
+        .friends-section {
+            padding: 82px 0 76px;
+        }
+         .friends-gallery {
+        margin: 28px 0 39px;
+        gap: 30px 39px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        }
+         .friend-card:nth-child(7),
+         .friend-card:last-child{
+            display: none;
+        }
+        .contact-section {
+            padding: 14px 0 0;
+        }
+    }
     .swiper-button-prev,
     .swiper-button-next {
         top: var(--swiper-navigation-top-offset, 51%);
@@ -783,23 +809,29 @@ nav {
     .contact-section .flex-container {
         flex-direction: row;
         align-items: flex-start;
-        gap: 0px 61px;
+        gap: 0px 59px;
         justify-content: center;
-        padding-left: 26px;
     }
 
     .contact-info {
+        max-width: 280px;
         gap: 42px;
         margin: 18px 0 64px;
+    }
+    .contact-info:first-child{
+        margin-left: -20px;
     }
 
     .location {
         gap: 32px;
     }
+    .footer-image{
+        margin-left: 0;
+    }
 
 }
 
-@media (max-width:740px) {
+@media (max-width:767px) {
     .content-wrapper {
         width: 300px;
     }
@@ -837,7 +869,7 @@ nav {
 
     .hero-image {
         margin: 105px 0 0 40px;
-        width: 261px;
+        max-width: 261px;
     }
 
     .text-content {
@@ -882,7 +914,7 @@ nav {
     }
 
     .shelter-image {
-        width: 260px;
+        max-width: 260px;
     }
 
     .friends-section {
@@ -978,20 +1010,39 @@ nav {
         text-align: center;
     }
     .contact-section .flex-container {
-        flex-direction: column;
-        align-items: flex-start;
         gap: 0;
-        justify-content: center;
-        padding-left: 10px;
+    }
+    .contact-info:first-child {
+        margin-left: 0;
     }
     .location {
         gap: 40px;
         align-items: flex-start;
     }
+    .location .contact-item{
+        margin-left: -10px;
+    }
     .footer-image {
         max-width: 260px;
-        margin-left: 20px;
         margin-top: 14px;
     }
-
+    .pets {
+        .friends-section {
+            padding: 43px 0 44px;
+        }
+        .friends-gallery {
+            margin: 41px 0 39px;
+        }
+        .friend-card{
+            display: none;
+        }
+        .friend-card:first-child,
+        .friend-card:nth-child(2),
+        .friend-card:nth-child(3) {
+            display: flex;
+        }
+        .pagination li {
+            margin: 0 5px;
+        }
+    }
 }
