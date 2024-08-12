@@ -1,0 +1,1048 @@
+@font-face {
+    font-family: "Georgia", sans-serif;
+    src: url('./georgia.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Georgia", sans-serif;
+    src: url('./georgiai.ttf') format('ttf');
+    font-style: italic;
+    font-style: normal;
+}
+
+:root {
+    --font-family: "Georgia", sans-serif;
+    --second-family: "Arial", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --color-light-xl: #fff;
+    --color-light-l: #f6f6f6;
+    --color-light-s: #fafafa;
+    --color-dark-s: #cdcdcd;
+    --color-dark-m: #b2b2b2;
+    --color-dark-l: #545454;
+    --color-dark-xl: #4c4c4c;
+    --color-dark-2xl: #444;
+    --color-dark-3xl: #292929;
+    --color-primary: #f1cdb3;
+    --color-primary-light: #fddcc4;
+    --start-screen-gradient-background: #211f20;
+    --footer-gradient-background: #211f20;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 300px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: var(--color-dark-3xl);
+    transition: all 0.3s;
+}
+img{
+    width: 100%;
+}
+nav a:hover {
+    color: var(--color-light-s);
+}
+
+img {
+    display: block;
+}
+
+/*Common styles*/
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.btn-primary {
+    border-radius: 100px;
+    padding: 15px 45px;
+    background: var(--color-primary);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+    transition: all 0.3s;
+}
+
+.hero-section .btn-primary {
+    margin-top: 42px;
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-light);
+}
+
+.btn-secondary {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    padding: 13px 42px;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    color: var(--color-dark-3xl);
+    background: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.section-title {
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+
+/* Hero section */
+.hero-section {
+    width: 100%;
+    background-image: url('./img/bg-hero.jpg');
+    background-size: cover;
+
+}
+
+.header-container {
+    display: flex;
+    padding: 31px 0;
+}
+
+
+.logo-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+    padding-bottom: 6px;
+}
+
+.logo-text {
+    padding-left: 4px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--color-light-xl);
+}
+
+nav {
+    margin-left: auto;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    padding: 0;
+    margin: 15px 1px 15px 0;
+}
+
+.nav-link {
+    padding: 4px 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0;
+    color: var(--color-dark-s);
+    transition: all 0.3s;
+}
+
+.active {
+    cursor: default;
+    color: var(--color-light-s);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.hero-content {
+    padding: 55px 0 0;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 127px;
+    max-width: 470px;
+    align-items: flex-start;
+}
+
+.hero-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: var(--color-light-xl);
+}
+
+.hero-description {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-s);
+    padding-top: 4px;
+}
+
+
+.hero-image {
+    max-width: 698px;
+}
+
+
+/*About */
+.about-shelter {
+    padding: 81px 0 99px;
+    background: var(--color-light-xl);
+}
+
+.about-shelter .flex-container {
+    gap: 120px;
+    justify-content: center;
+}
+
+.shelter-image {
+    max-width: 300px;
+}
+
+.about-shelter .text-content {
+    padding-top: 14px;
+    max-width: 430px;
+}
+
+.about-shelter .section-title {
+    text-align: left;
+}
+
+.description {
+    margin-top: 23px;
+    margin-bottom: 25px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-xl);
+}
+
+.additional-info {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-xl);
+}
+
+
+
+/*friends*/
+.friends-section {
+    background: var(--color-light-l);
+    padding: 81px 0 115px;
+    text-align: center;
+}
+
+
+.friends-gallery {
+    margin: 58px 105px 75px;
+    display: flex;
+    gap: 90px;
+}
+
+.swiper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    justify-content: space-around;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.arrow-button {
+    width: 47px;
+    height: 47px;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid var(--color-primary);
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 44%);
+    left: var(--swiper-navigation-sides-offset, 0);
+}
+
+.swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 44%);
+    right: var(--swiper-navigation-sides-offset, 0px);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: '';
+    width: 14px;
+    height: 6px;
+    background-image: url('./img/Arrow.svg');
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.swiper-button-next:after {
+    transform: rotate(180deg);
+}
+
+.friend-card {
+    max-width: 270px;
+    display: flex;
+    border-radius: 9px;
+    background: var(--color-light-s);
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.friend-card:hover {
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.friend-card:hover .btn-secondary {
+    color: var(--color-dark-3xl);
+    background: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.friend-image {
+    width: 270px;
+}
+
+.friend-name {
+    margin: 30px 0 31px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+}
+
+.friend-card .btn-secondary {
+    margin-bottom: 30px;
+}
+
+
+.help-shelter {
+    background-color: var(--color-light-xl, #fff);
+    padding: 82px 0 42px;
+}
+
+.help-items-container {
+    padding: 57px 0;
+    gap: 55px 119px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.help-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-item-icon {
+    aspect-ratio: 1;
+    -o-object-fit: auto;
+    object-fit: auto;
+    -o-object-position: center;
+    object-position: center;
+    width: 60px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.help-item-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+}
+
+
+
+.donation-section {
+    background-color: var(--color-light-l, #f6f6f6);
+    padding: 82px 0 100px;
+}
+
+.donation-section .flex-container {
+    justify-content: center;
+    gap: 30px;
+}
+
+.donation-image {
+    max-width: 505px;
+    margin-top: 10px;
+}
+
+.donation-info {
+    max-width: 380px;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-info .section-title {
+    text-align: left;
+}
+
+.bank-info {
+    margin: 19px 0 0px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.account-details {
+    margin: 19px 0 20px;
+    border-radius: 9px;
+    background-color: var(--color-primary, #f1cdb3);
+    padding: 10px 15px;
+}
+
+.account-number-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.credit-card-icon {
+    aspect-ratio: 1.3;
+    -o-object-fit: auto;
+    object-fit: auto;
+    -o-object-position: center;
+    object-position: center;
+    width: 30px;
+    fill: var(--color-dark-3xl, #292929);
+}
+
+.account-number {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.legal-info {
+    font-family: var(--second-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-dark-m);
+}
+
+
+.contact-section {
+    padding: 40px 0 0;
+    background-image: url('./img/bg-footer.jpg');
+    background-size: cover;
+}
+
+.contact-section .flex-container {
+    justify-content: flex-start;
+    gap: 160px;
+}
+
+.contact-info {
+    margin: 18px 0 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-heading {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-light-xl);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.contact-icon {
+    width: 40px;
+}
+
+.contact-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+}
+
+
+.location-icon {
+    width: 22px;
+}
+
+.footer-image {
+    max-width: 300px;
+    margin-left: 7px;
+}
+
+.burger {
+    display: none;
+}
+
+/*PETS*/
+
+.pets {
+
+    .logo,
+    .logo-text {
+        color: var(--color-dark-l);
+    }
+
+    .nav-link {
+        color: var(--color-dark-l);
+        transition: all 0.3s;
+    }
+
+    nav .active {
+        color: var(--color-dark-3xl);
+    }
+
+    .nav-link:hover {
+        color: var(--color-dark-3xl);
+    }
+
+    .header-container {
+        padding-bottom: 25px;
+    }
+
+    .friends-section {
+        padding: 82px 0 100px;
+    }
+    .friends-gallery{
+        margin: 58px 0 60px;
+        gap: 30px 40px;
+        flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+        padding: 13px 44px;
+    }
+
+    .pagination {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .pagination li {
+        margin: 0 10px;
+    }
+
+    .pagination button {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: var(--color-dark-3xl);
+        background: var(--color-light-s);
+        border: 2px solid var(--color-primary);
+        border-radius: 100px;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+    }
+
+    .pagination .active {
+        cursor: default;
+        color: var(--color-dark-3xl);
+        background: var(--color-primary);
+        border: 2px solid var(--color-primary);
+    }
+
+    .pagination .disabled {
+        cursor: not-allowed;
+        background: var(--color-light-s);
+        color: var(--color-dark-s);
+        border: 2px solid var(--color-dark-s);
+    }
+    .contact-section{
+        padding: 39px 0 0;;
+    }
+}
+
+
+/*MEDIA*/
+@media (max-width: 1260px) {
+    .content-wrapper {
+        max-width: 708px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .header-container {
+        padding-bottom: 20px;
+    }
+
+    .hero-section .btn-primary {
+        align-self: center;
+    }
+
+    .hero-content {
+        max-width: 710px;
+        padding: 0;
+    }
+
+    .hero-image {
+        max-width: 569px;
+        margin-top: 100px;
+        margin-left: 138px;
+    }
+
+    .text-content {
+        padding: 0;
+        max-width: 460px;
+    }
+
+    .about-shelter {
+        padding: 0 20px 100px;
+    }
+
+    .about-shelter .flex-container {
+        gap: 79px;
+    }
+
+    .about-shelter .left-column {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-shelter .left-column,
+    .about-shelter .right-column {
+        width: 430px;
+    }
+
+    .about-shelter .text-content {
+        padding-top: 81px;
+    }
+
+    .section-title,
+    .description,
+    .additional-info {
+        max-width: 100%;
+    }
+
+    .friends-section {
+        padding: 82px 0 115px;
+    }
+
+    .swiper {
+        width: 708px;
+        margin-bottom: 75px;
+    }
+
+    .friends-gallery {
+        margin: 58px 64px 0;
+        gap: 40px;
+        overflow-x: hidden;
+        max-width: 100%;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    }
+    .pets {
+        .friends-section {
+            padding: 82px 0 76px;
+        }
+         .friends-gallery {
+        margin: 28px 0 39px;
+        gap: 30px 39px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        }
+         .friend-card:nth-child(7),
+         .friend-card:last-child{
+            display: none;
+        }
+        .contact-section {
+            padding: 14px 0 0;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: var(--swiper-navigation-top-offset, 51%);
+    }
+
+    .help-items-container {
+        gap: 55px 60px;
+        flex-direction: row;
+        padding: 58px 0;
+    }
+
+    .help-item {
+        width: 170px;
+    }
+
+    .donation-section {
+        padding: 80px 0 100px;
+    }
+
+    .donation-section .left-column {
+        order: 2;
+    }
+
+    .donation-image {
+        margin-top: 30px;
+    }
+
+    .contact-section {
+        padding: 14px 0 0;
+    }
+
+    .contact-section .flex-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0px 59px;
+        justify-content: center;
+    }
+
+    .contact-info {
+        max-width: 280px;
+        gap: 42px;
+        margin: 18px 0 64px;
+    }
+    .contact-info:first-child{
+        margin-left: -20px;
+    }
+
+    .location {
+        gap: 32px;
+    }
+    .footer-image{
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width:767px) {
+    .content-wrapper {
+        width: 300px;
+    }
+
+    .header-container {
+        width: 280px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 15px 0 0;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    .hero-title {
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        margin-bottom: 37px;
+    }
+
+    .hero-description {
+        text-align: center;
+    }
+
+    .hero-image {
+        margin: 105px 0 0 40px;
+        max-width: 261px;
+    }
+
+    .text-content {
+        align-items: center;
+    }
+
+    .section-title,
+    .about-shelter .section-title {
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 0.06em;
+    }
+
+    .about-shelter {
+        padding: 0 0 44px;
+    }
+
+    .about-shelter .flex-container {
+        gap: 41px;
+    }
+
+    .left-column,
+    .about-shelter .left-column,
+    .right-column,
+    .about-shelter .right-column {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .about-shelter .text-content {
+        padding-top: 42px;
+    }
+
+    .description {
+        padding: 0 15px;
+        margin-top: 24px;
+        margin-bottom: 22px;
+    }
+
+    .additional-info {
+        padding: 0 15px;
+    }
+
+    .shelter-image {
+        max-width: 260px;
+    }
+
+    .friends-section {
+        padding: 40px 0 57px;
+    }
+
+    .friends-gallery {
+        margin: 41px 0 0;
+    }
+
+    .swiper {
+        width: 270px;
+        margin-bottom: 54px;
+        padding-bottom: 75px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: var(--swiper-navigation-top-offset, 90%);
+    }
+
+    .swiper-button-prev {
+        left: var(--swiper-navigation-sides-offset, 16%);
+    }
+
+    .swiper-button-next {
+        right: var(--swiper-navigation-sides-offset, 16%);
+    }
+
+    .help-shelter {
+        padding: 42px 0 2px;
+    }
+
+    .help-items-container {
+        padding: 41px 0;
+        gap: 29px 30px;
+        margin-left: 5px;
+        justify-content: flex-start;
+    }
+
+    .help-item {
+        width: 130px;
+    }
+
+    .help-item-icon {
+        width: 50px;
+        margin-bottom: 21px;
+    }
+
+    .help-item-text {
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+    .donation-section {
+        padding: 43px 0 41px;
+    }
+    .donation-info{
+        align-items: center;
+    }
+    .donation-info .section-title {
+        text-align: center;
+    }
+    .account-details{
+        margin: 24px 0 20px;
+    }
+    .bank-info{
+        letter-spacing: 0;
+        margin-top: 22px;
+    }
+    .account-number-wrapper{
+        align-items: center;
+    }
+    .account-number{
+        font-size: 15px;
+    }
+    .legal-info{
+        width: 280px;
+        text-align: justify;
+    }
+    .donation-image {
+        max-width: 262px;
+        margin-top: 12px;
+        margin-left: 19px;
+    }
+    .contact-info{
+        margin: 16px 0 25px;
+        align-items: center;
+    }
+    .contact-heading{
+        margin: 0 3px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .contact-section .flex-container {
+        gap: 0;
+    }
+    .contact-info:first-child {
+        margin-left: 0;
+    }
+    .location {
+        gap: 40px;
+        align-items: flex-start;
+    }
+    .location .contact-item{
+        margin-left: -10px;
+    }
+    .footer-image {
+        max-width: 260px;
+        margin-top: 14px;
+    }
+    .pets {
+        .friends-section {
+            padding: 43px 0 44px;
+        }
+        .friends-gallery {
+            margin: 41px 0 39px;
+        }
+        .friend-card{
+            display: none;
+        }
+        .friend-card:first-child,
+        .friend-card:nth-child(2),
+        .friend-card:nth-child(3) {
+            display: flex;
+        }
+        .pagination li {
+            margin: 0 5px;
+        }
+    }
+}
